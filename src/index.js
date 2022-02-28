@@ -1,14 +1,22 @@
 import React from 'react';
-import ReactDOM, { render } from 'react-dom';
+import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+//import App from './App';
+import Test from './Test';
 import reportWebVitals from './reportWebVitals';
+import HelloComponent from './component/HelloComponent'; 
+import Login from './login/login1';
 
-const Hello = () => {
-  return <p>Putri Alivia</p>
+class StateFullComponent extends React.Component {
+  render() {
+    return <p>StateFullComponent</p>
+  }
 }
 
-ReactDOM.render(<Hello />, document.getElementById('root'));
+ReactDOM.render(
+  <Login />,
+  document.getElementById('root')
+);
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
